@@ -1,27 +1,41 @@
 .page {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 10px;
-}
+    padding: 10px;}
 
 
 header {
+position: sticky;
+top: 0px;
 grid-column: 1 / -1;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-gap: 10px;
-}
+align-items: center;
+border-radius: 30px;
+padding: 15px;
+gap: 10px;}
 
 header .mainheader {
-    grid-column:
-    span 1 / -2; 
+    grid-column: 1;
+    grid-column: span 1; 
+    text-align: start;
     padding: 0;}
 
 header .navbar {
-    display:
-    flex; grid-column: span 1;
-    padding: 20px;
-    flex-direction: 
-    column;
+    grid-column: span 2;
+    /* border: 10px solid blue; */
+    /* margin: 0px 100px 0px 0px; */
+    padding: 0px 100px 0px 0px;
     text-align: end;}
 
+header .navbar nav {
+    display: inline-block;
+    padding: 0px 30px 0px 0px;
+    gap: 30px;}
+
+main {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    align-items: center;
+    gap: 10px;}
